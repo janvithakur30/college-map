@@ -8,8 +8,8 @@ const defaultLabels = [
   { id: 'it', name: "IT & Management", top: "30%", left: "70%", zoomLevel: 1.3, color: "from-blue-400 to-blue-600" },
   // Positioned directly over the orange-roof canteen building
   { id: 'canteen', name: "Canteen", top: "42%", left: "18%", zoomLevel: 1.2, color: "from-yellow-400 to-yellow-600" },
-  // Positioned over the basketball court area
-  { id: 'basket', name: "Basketball Court", top: "62%", left: "46%", zoomLevel: 1.2, color: "from-purple-400 to-purple-600" },
+  // Positioned over basketball court area
+  { id: 'basket', name: "Basketball Court", top: "58%", left: "48%", zoomLevel: 1.2, color: "from-purple-400 to-purple-600" },
   { id: 'park', name: "Laureate Park", top: "75%", left: "25%", zoomLevel: 1.2, color: "from-emerald-400 to-emerald-600" },
   { id: 'gate', name: "Main Gate", top: "85%", left: "50%", zoomLevel: 1.3, color: "from-red-400 to-red-600" },
 ];
