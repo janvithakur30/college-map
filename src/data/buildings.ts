@@ -52,7 +52,7 @@ export const buildings: Building[] = [
     title: "IT & Management",
     description:
       "Dedicated space for IT and management programs with modern computer labs and seminar rooms.",
-    images: ["/building/IT-Management/management.jpeg"],
+    images: ["/building/IT/management.jpeg"],
     stats: [
       { label: "Computer Labs", value: "3" },
       { label: "Classrooms", value: "6" },
