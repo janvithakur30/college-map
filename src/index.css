@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 220 25% 25%;
+
+    --card: 210 50% 100%;
+    --card-foreground: 220 25% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 25%;
+
+    --primary: 0 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 90% 60%;
+    --secondary-foreground: 30 60% 20%;
+
+    --muted: 210 25% 94%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 140 50% 55%;
+    --accent-foreground: 140 25% 20%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 88%;
+    --input: 210 30% 90%;
+    --ring: 0 70% 50%;
+
+    --radius: 1.5rem;
+
+    --campus-green: 140 50% 45%;
+    --campus-red: 0 70% 50%;
+    --campus-gold: 45 90% 55%;
+    --campus-sky: 200 70% 88%;
+    --campus-hill: 140 40% 60%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 25%;
+    --sidebar-primary: 0 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 50% 96%;
+    --sidebar-accent-foreground: 210 80% 40%;
+    --sidebar-border: 210 30% 90%;
+    --sidebar-ring: 0 70% 50%;
+
+    --font-heading: 'Fredoka', sans-serif;
+    --font-body: 'Nunito', sans-serif;
+  }
+
+  .dark {
+    --background: 220 25% 10%;
+    --foreground: 210 30% 90%;
+    --card: 220 25% 14%;
+    --card-foreground: 210 30% 90%;
+    --popover: 220 25% 14%;
+    --popover-foreground: 210 30% 90%;
+    --primary: 210 80% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 210 30% 90%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 215 15% 60%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 30 60% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 210 80% 55%;
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 210 30% 90%;
+    --sidebar-primary: 210 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 210 80% 65%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 210 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html, body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    cursor: url("/cursor/cursoor%203.png") 2 2, auto;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 shadow-2xl shadow-black/5;
+  }
+  .stat-badge {
+    @apply inline-flex items-center justify-center min-w-[2rem] h-7 px-2 rounded-full text-sm font-bold;
+  }
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-muted-foreground transition-all duration-200 cursor-pointer;
+  }
+  .nav-item:hover {
+    @apply bg-secondary text-foreground;
+  }
+  .nav-item.active {
+    @apply bg-primary text-primary-foreground shadow-md;
+  }
+}
