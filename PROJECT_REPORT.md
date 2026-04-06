@@ -647,6 +647,5 @@ src/
 - API: Application Programming Interface
 - `localStorage`: browser storage mechanism for persisting client-side data
 
----
 
 *End of report.*
